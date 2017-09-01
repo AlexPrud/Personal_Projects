@@ -73,11 +73,11 @@ def main():
 
 if __name__ == "__main__":
 	main()
-
-# Prevent app from closing
-closeapp = 'r'
-while closeapp == 'r':
-	closeapp = input('Press [Enter] to exit or [r] to restart: ')
-	if closeapp == 'r':
-		cls()
-		main()
+	
+	# Prevent app from closing
+	closeapp = 'r'
+	while closeapp == 'r':
+		closeapp = input('Press [Enter] to exit or [r] to restart: ')
+		if closeapp == 'r':
+			cls()
+			main()
