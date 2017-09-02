@@ -4,9 +4,15 @@ import random
 def getplayernames():
 # Gets Player A & B names
 	while True:
-		pa = str(input('Player A -> ')) # Player A
-		pb = str(input('Player B -> ')) # Player B
-		if pa != '' and pb != '' and pa != pb:
+		while True:
+			pa = str(input('Player A -> ')) # Player A
+			if pa != '':
+				break
+		while True:
+			pb = str(input('Player B -> ')) # Player B
+			if pb != '':
+				break			
+		if pa != pb:
 			break
 		print("Put two different names! Try again.")
 	return pa, pb
